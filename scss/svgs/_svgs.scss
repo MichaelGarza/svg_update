@@ -1,0 +1,53 @@
+/* --------------------------
+  Keyframes
+--------------------------- */
+
+@keyframes turn {
+   @include svg-turn;
+}
+
+@keyframes pulse {
+  @include svg-pulse;
+}
+
+// SVG Styles
+
+nav {
+   svg {
+      @include nav-svg-size;
+   }
+}
+
+.logo {
+   margin: auto;
+   display: block;
+   @include logo-svg-size;
+   * {
+      transform-origin: 50% 50%;
+   }
+   #logo-text {
+      display: none;
+      @include mobile {
+         display: block;
+         transform-origin: 50% 70%;
+         animation: pulse 1s .25s;
+      }
+   }
+   #logo-icon {  
+      animation: turn 1.1s .2s esase-out backwards;   
+   }
+   #paw {
+     animation: pulse .75s 1.2s; 
+   }
+}
+
+.corgi {
+   padding-left: .75em;
+}
+
+.dog {
+   @include dog-svg-size;
+   @include mobile-coat-color;
+   @include tablet-coat-color;   
+}
+

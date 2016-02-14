@@ -1,0 +1,111 @@
+// Tablet media query
+
+$mobile-width: 420px;
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+$tablet-width: 768px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+// Dog coat colors
+
+@mixin mobile-coat-color {
+   @include mobile {
+      #coat-1 {
+         fill: red; 
+      }
+      #coat-2 {
+         fill: green;   
+      }
+      #coat-3 {
+         fill: blue;   
+      }
+      #coat-4 {
+         fill: tomato;   
+      }    
+   }
+      
+}
+
+@mixin tablet-coat-color {
+   @include tablet {
+      #coat-1 {
+         fill: yellow; 
+      }
+      #coat-2 {
+         fill: purple;   
+      }
+      #coat-3 {
+         fill: pink;   
+      }
+      #coat-4 {
+         fill: teal;   
+      }   
+   }
+}
+
+// Keyframe parameters
+
+ @mixin svg-turn {
+  0% {
+    transform: rotate(0) scale(0);
+    opacity: 0;
+  }
+  40% {
+    transform: rotate(450deg) scale(1);
+  }
+  60% {
+    transform: rotate(300deg) scale(.65);
+  }
+   80% {
+    transform: rotate(400deg) scale(1.2);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@mixin svg-pulse {
+   0% {
+      transform: scale(1); 
+   } 
+   40% {
+      transform: scale(.65);
+   }
+   70% {
+      transform: scale(1.2);
+   }
+   100% {
+      transform: scale(1);
+   }
+}
+
+// SVG sizes
+
+@mixin nav-svg-size {
+   width: 18px;
+   height: 18px;
+}
+
+@mixin logo-svg-size {
+   width: 140px;
+   height: 140px;
+}
+
+@mixin dog-svg-size {
+   width: 170px;
+   height: 170px;
+}
+   
+   
+   
+   

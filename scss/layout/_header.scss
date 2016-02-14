@@ -1,0 +1,19 @@
+header {
+   padding-top: 10px;
+   nav {
+      padding-bottom: 50px;
+      text-align: left;
+   }
+   li {
+      display: inline-block;
+      margin-right: 20px;
+   }
+   h1 {
+      line-height: 1em;
+   }
+   @include mobile {
+      .us {
+         display: none;
+      }   
+   }
+}

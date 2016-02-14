@@ -1,0 +1,33 @@
+#container {
+   max-width: 960px;
+   background: $color-container-bg;
+   @extend %zero-auto;
+}
+
+main {
+   padding-top: 50px;
+   h2 {
+      font-size: 28px;
+   }
+   ul {
+      padding: 0;
+   }
+   li {
+      display: inline-block;
+      color: $color-font-footer;
+      margin-right: 20px;
+   }
+   img {
+      margin-bottom: 15px;
+   }
+   span {
+      margin-left: -40px;
+   }
+   li:last-child {
+      margin-right: 0;
+   }
+}
+ 
+
+ 
+ 
