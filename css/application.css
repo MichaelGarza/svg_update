@@ -113,7 +113,7 @@ nav svg {
         transform-origin: 50% 70%;
         animation: pulse 1s .25s; } }
   .logo #logo-icon {
-    animation: turn 1.1s .2s esase-out backwards; }
+    animation: turn 1.1s .2s ease-out backwards; }
   .logo #paw {
     animation: pulse .75s 1.2s; }
 
